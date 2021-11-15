@@ -1,7 +1,8 @@
+import { Center } from '@chakra-ui/react'
 import { MNGPage } from '../components/MNGLayout'
-import { MNGBody } from '../components/MNGType'
-import { DPChatbaxa, DPChatbaxi, DPChatbaxu } from '../components/DPLayout'
-import { GraphQLClient } from 'graphql-request';
+import { MNGH3, MNGBody } from '../components/MNGType'
+import { DPChatbaxu } from '../components/DPLayout'
+import { GraphQLClient } from 'graphql-request'
 
 // get static props from GraphCMS
 export async function getStaticProps() {
@@ -48,10 +49,23 @@ export default function Home({ messages }) {
   return (
     <MNGPage meta={head.meta} og={head.og}>
 
+      <MNGH3 textAlign="center" mb="mngr.7">We Gonna Heal, Change, Build</MNGH3>
+      <MNGBody textAlign="center" mb="mngr.11">Chawki Daar Music</MNGBody>
+      <Center mb="mngr.88">
+        <audio
+          controls
+          src="https://ipfs.io/ipfs/QmPnM2qiVjEwKQaLyQ5ZYYSM7v3X1nozK4v4uECcRQciEV?filename=ConversationsDivinePartner.wav"
+          crossOrigin="anonymous"
+        >
+              Your browser does not support the
+              <code>audio</code> element.
+        </audio>
+      </Center>
+
       {messages.map( message => (
         <DPChatbaxu
           key={message.id}
-          side={message.author.name}
+          queer={message.author.name}
           timestamp={message.updatedAt}
         >
           <MNGBody mb={0}>{message.text}</MNGBody>

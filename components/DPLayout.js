@@ -16,7 +16,7 @@ export const DPByline = (props) => {
 }
 
 export const DPChatbaxu = (props) => {
-  const isRani = props.side == "Maharani" ? true : false;
+  const isRani = props.queer == "Maharani" ? true : false;
   const bgcolor = isRani ? "mngr.green" : "mngr.dark";
   return (
     <Flex>
