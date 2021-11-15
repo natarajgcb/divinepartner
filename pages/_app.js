@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import { ChakraProvider } from "@chakra-ui/react"
+import MNGTheme from '../styles/mng.theme'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function DivinePartner({ Component, pageProps }) {
+  return (
+    <ChakraProvider resetCSS theme={MNGTheme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
 }
 
-export default MyApp
+export default DivinePartner
