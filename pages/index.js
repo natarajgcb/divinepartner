@@ -36,11 +36,11 @@ export default function Home({ messages }) {
   // set head and seo params
   const head = {
     meta: {
-      title: "Conversations with Divine Partner",
+      title: "Divine Partner ~/~ Conversation",
       description: "Dearly beloved - We are gathered here today - To get through this thing called, 'life'"
     },
     og: {
-      title: "Conversations with Divine Partner",
+      title: "Divine Partner ~/~ Conversation",
       description: "Dearly beloved - We are gathered here today - To get through this thing called, 'life'",
       image: "/img/NatarajGFamilyPortrait.jpg"
     }
