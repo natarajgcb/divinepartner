@@ -13,7 +13,7 @@ export const MNGHeader = (props) => {
       <MNGNote w="61.8%" mx="auto" my="mngr.88">
         Dearly beloved<br/>
         We are gathered here today<br/>
-        To get through this thing called, "life"<br/>
+        To get through this thing called, &quot;life&quot;<br/>
       </MNGNote>
     </>
   )
